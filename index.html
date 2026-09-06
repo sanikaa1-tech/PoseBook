@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PoseBook - Discover Photography Poses & References</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="brand__mark">📷</span> PoseBook
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="explore-poses.html">Explore Poses</a>
+        <a href="photographers.html">Photographers</a>
+        <a href="#hive">Lighting &amp; Styles</a>
+        <a href="explore-poses.html">Creators</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="photographers.html" class="btn-pro">✨ Find a Pro</a>
+        <a href="#" class="btn-login">Log in</a>
+        <a href="#" class="btn-primary">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero-section">
+    <div class="badge-pill">
+      ✨ Discover Over 10,000+ Curated Photography Poses &amp; References
+    </div>
+    
+    <h1 class="hero-title">
+      Find Your Next<br />
+      <span class="gradient-text">Picture-Perfect Shot</span>
+    </h1>
+    
+    <p class="hero-subtitle">
+      Curated poses, real lighting recipes, and top-tier local photographers ready<br />
+      to bring your creative vision to life.
+    </p>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <span class="search-icon">🔍</span>
+      <input 
+        type="text" 
+        placeholder="Search poses by style, location, or pose name (e.g. Wedding, Golden Hour...)" 
+      />
+      <button class="btn-search">Explore All &rarr;</button>
+    </div>
+
+    <!-- Category Filter Tags -->
+    <div class="filter-tags">
+      <button class="tag active">All</button>
+      <button class="tag">Wedding</button>
+      <button class="tag">Pre-Wedding</button>
+      <button class="tag">Portrait</button>
+      <button class="tag">Fashion</button>
+      <button class="tag">Travel</button>
+      <button class="tag">Couple</button>
+      <button class="tag">Traditional</button>
+      <button class="tag">Cinematic</button>
+      <button class="tag">Beach</button>
+      <button class="tag">Mountain</button>
+      <button class="tag">Studio</button>
+      <button class="tag">Street</button>
+    </div>
+
+    <!-- Platform Stats -->
+    <div class="stats-container">
+      <div class="stat-card">
+        <h3>10,000+</h3>
+        <p>CURATED POSE REFERENCES</p>
+      </div>
+      <div class="stat-card">
+        <h3>1,200+</h3>
+        <p>VERIFIED PHOTOGRAPHERS</p>
+      </div>
+      <div class="stat-card">
+        <h3>4.9 ★</h3>
+        <p>COMMUNITY RATING</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AESTHETIC HIVE MATRIX SECTION ================= -->
+  <section class="hive-section" id="hive">
+    <div class="hive-container">
+      <div class="hive-header">
+        <span class="hive-badge">⚡ THE AESTHETIC HIVE MATRIX</span>
+        <h2>Choose Your <span>Signature Shoot Mood</span></h2>
+        <p>Interactive honeycomb of lighting setups, wardrobe palettes, and matching professional photographers. Hover and tap to filter.</p>
+      </div>
+
+      <div class="hive-grid">
+        <!-- Card 1 (Active Glowing Card as in Screenshot 1) -->
+        <div class="hive-card active-card" onclick="window.location.href='explore-poses.html'">
+          <div>
+            <div class="hive-card-header">
+              <div class="icon-hex orange">👑</div>
+              <div>
+                <h3>Royal Heritage</h3>
+                <p>Regal lehengas, carved palace arches &amp; grand symmetry</p>
+              </div>
+              <span class="node-pill">Style Node</span>
+            </div>
+            <div class="hive-recipe">
+              💡 Warm ambient + subtle gold directional rim light
+            </div>
+          </div>
+          <a href="explore-poses.html" class="hive-link">
+            <span>Explore Poses in this Hive</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="hive-card" onclick="window.location.href='explore-poses.html'">
+          <div>
+            <div class="hive-card-header">
+              <div class="icon-hex cyan">🌊</div>
+              <div>
+                <h3>Sunset Shoreline</h3>
+                <p>Windswept silhouettes, golden flares &amp; sea spray</p>
+              </div>
+              <span class="node-pill">Style Node</span>
+            </div>
+            <div class="hive-recipe">
+              💡 Low-angle golden hour backlight + water reflections
+            </div>
+          </div>
+          <a href="explore-poses.html" class="hive-link">
+            <span>Explore Poses in this Hive</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="hive-card" onclick="window.location.href='explore-poses.html'">
+          <div>
+            <div class="hive-card-header">
+              <div class="icon-hex magenta">⚡</div>
+              <div>
+                <h3>Cyberpunk Neon</h3>
+                <p>Rain-soaked urban pavements &amp; chromatic tubes</p>
+              </div>
+              <span class="node-pill">Style Node</span>
+            </div>
+            <div class="hive-recipe">
+              💡 Dual-tone magenta key &amp; cyan rim ambient
+            </div>
+          </div>
+          <a href="explore-poses.html" class="hive-link">
+            <span>Explore Poses in this Hive</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="hive-card" onclick="window.location.href='explore-poses.html'">
+          <div>
+            <div class="hive-card-header">
+              <div class="icon-hex purple">🪵</div>
+              <div>
+                <h3>Minimal Octabox</h3>
+                <p>Clean geometry, monochrome backdrops &amp; deep serenity</p>
+              </div>
+              <span class="node-pill">Style Node</span>
+            </div>
+            <div class="hive-recipe">
+              💡 Soft Rembrandt lighting via 120cm Octabox
+            </div>
+          </div>
+          <a href="explore-poses.html" class="hive-link">
+            <span>Explore Poses in this Hive</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="hive-card" onclick="window.location.href='explore-poses.html'">
+          <div>
+            <div class="hive-card-header">
+              <div class="icon-hex red">💍</div>
+              <div>
+                <h3>Intimate Chemistry</h3>
+                <p>Forehead touches, authentic laughter &amp; documentary soul</p>
+              </div>
+              <span class="node-pill">Style Node</span>
+            </div>
+            <div class="hive-recipe">
+              💡 Natural window diffusion + warm interior bounce
+            </div>
+          </div>
+          <a href="explore-poses.html" class="hive-link">
+            <span>Explore Poses in this Hive</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="hive-card" onclick="window.location.href='explore-poses.html'">
+          <div>
+            <div class="hive-card-header">
+              <div class="icon-hex green">💎</div>
+              <div>
+                <h3>Haute Runway</h3>
+                <p>Dynamic organza fabric flight &amp; razor-sharp editorial tension</p>
+              </div>
+              <span class="node-pill">Style Node</span>
+            </div>
+            <div class="hive-recipe">
+              💡 High-speed strobe + hard directional key
+            </div>
+          </div>
+          <a href="explore-poses.html" class="hive-link">
+            <span>Explore Poses in this Hive</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TRENDING POSES SECTION (Matches Screenshot 2) ================= -->
+  <section class="trending-section">
+    <div class="trending-header">
+      <div>
+        <h2>Trending Poses &amp; References</h2>
+        <p>Real photographer shots with camera angles &amp; pose styling notes</p>
+      </div>
+      <a href="explore-poses.html" class="view-all">View Full Gallery (10k+) &rarr;</a>
+    </div>
+
+    <!-- Gallery Grid Populated with Exact Photos & Tall Card -->
+    <div class="gallery-grid" id="trendingGalleryGrid">
+      
+      <!-- Card 1: Pine Forest Walk -->
+      <div class="pose-card" onclick="openPoseModal(1)">
+        <div class="image-wrapper">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80" alt="Pine Forest Morning Light Beam Walk" />
+          <div class="card-overlay">
+            <div class="tag-group">
+              <span class="chip white">Environmental Walk</span>
+              <span class="chip purple">✨ Atmospheric Travel</span>
+            </div>
+            <div class="action-icons">
+              <button class="action-btn" onclick="event.stopPropagation(); toggleLike(this, 1)">🤍 <span class="like-count">1</span></button>
+              <button class="action-btn" onclick="event.stopPropagation();">📝 3</button>
+              <button class="action-btn" onclick="event.stopPropagation();">🔗</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <h3>Pine Forest Morning Light Beam Walk</h3>
+          <div class="photographer-info">
+            <span>by Rohan Joshi</span>
+            <span class="location">📍 Kullu Valley</span>
+          </div>
+          <a href="photographers.html" class="find-link" onclick="event.stopPropagation();">
+            <span>Find Photographer for this Style</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2: Monochrome Denim Close-up -->
+      <div class="pose-card" onclick="openPoseModal(2)">
+        <div class="image-wrapper">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="Monochrome High-Key Denim Close-up" />
+          <div class="card-overlay">
+            <div class="tag-group">
+              <span class="chip white">Close-up Gaze</span>
+              <span class="chip purple">✨ Fine Art B&amp;W</span>
+            </div>
+            <div class="action-icons">
+              <button class="action-btn" onclick="event.stopPropagation(); toggleLike(this, 2)">🤍 <span class="like-count">1</span></button>
+              <button class="action-btn" onclick="event.stopPropagation();">📝 3</button>
+              <button class="action-btn" onclick="event.stopPropagation();">🔗</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <h3>Monochrome High-Key Denim Close-up</h3>
+          <div class="photographer-info">
+            <span>by Ananya Roy</span>
+            <span class="location">📍 Delhi Studio</span>
+          </div>
+          <a href="photographers.html" class="find-link" onclick="event.stopPropagation();">
+            <span>Find Photographer for this Style</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3: Sunset Beach Walk -->
+      <div class="pose-card" onclick="openPoseModal(3)">
+        <div class="image-wrapper">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="Sunset Beach Romantic Walk" />
+          <div class="card-overlay">
+            <div class="tag-group">
+              <span class="chip white">Couple Walking</span>
+              <span class="chip purple">✨ Romantic Candid</span>
+            </div>
+            <div class="action-icons">
+              <button class="action-btn" onclick="event.stopPropagation(); toggleLike(this, 3)">🤍 <span class="like-count">1</span></button>
+              <button class="action-btn" onclick="event.stopPropagation();">📝 3</button>
+              <button class="action-btn" onclick="event.stopPropagation();">🔗</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <h3>Sunset Beach Romantic Walk</h3>
+          <div class="photographer-info">
+            <span>by Rahul Photography</span>
+            <span class="location">📍 South Goa</span>
+          </div>
+          <a href="photographers.html" class="find-link" onclick="event.stopPropagation();">
+            <span>Find Photographer for this Style</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4: Refraction Close-up Glass Portrait -->
+      <div class="pose-card" onclick="openPoseModal(4)">
+        <div class="image-wrapper">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Refraction Close-up Glass Portrait" />
+          <div class="card-overlay">
+            <div class="tag-group">
+              <span class="chip white">Refraction Close-up</span>
+              <span class="chip purple">✨ Creative Experimental</span>
+            </div>
+            <div class="action-icons">
+              <button class="action-btn" onclick="event.stopPropagation(); toggleLike(this, 4)">🤍 <span class="like-count">1</span></button>
+              <button class="action-btn" onclick="event.stopPropagation();">📝 3</button>
+              <button class="action-btn" onclick="event.stopPropagation();">🔗</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <h3>Refraction Close-up Glass Portrait</h3>
+          <div class="photographer-info">
+            <span>by Priya Sharma</span>
+            <span class="location">📍 Mumbai Studio</span>
+          </div>
+          <a href="photographers.html" class="find-link" onclick="event.stopPropagation();">
+            <span>Find Photographer for this Style</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 5: Royal Palace Courtyard Symmetry -->
+      <div class="pose-card" onclick="openPoseModal(5)">
+        <div class="image-wrapper">
+          <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" alt="Royal Palace Courtyard Symmetry" />
+          <div class="card-overlay">
+            <div class="tag-group">
+              <span class="chip white">Palace Symmetry</span>
+              <span class="chip purple">✨ Royal Heritage</span>
+            </div>
+            <div class="action-icons">
+              <button class="action-btn" onclick="event.stopPropagation(); toggleLike(this, 5)">🤍 <span class="like-count">1</span></button>
+              <button class="action-btn" onclick="event.stopPropagation();">📝 3</button>
+              <button class="action-btn" onclick="event.stopPropagation();">🔗</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <h3>Royal Palace Courtyard Symmetry</h3>
+          <div class="photographer-info">
+            <span>by Siddharth Verma</span>
+            <span class="location">📍 Udaipur Palace</span>
+          </div>
+          <a href="photographers.html" class="find-link" onclick="event.stopPropagation();">
+            <span>Find Photographer for this Style</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 6: Cyberpunk Night Street Glow -->
+      <div class="pose-card" onclick="openPoseModal(6)">
+        <div class="image-wrapper">
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Cyberpunk Night Street Glow" />
+          <div class="card-overlay">
+            <div class="tag-group">
+              <span class="chip white">Urban Neon</span>
+              <span class="chip purple">✨ Cyberpunk Vibe</span>
+            </div>
+            <div class="action-icons">
+              <button class="action-btn" onclick="event.stopPropagation(); toggleLike(this, 6)">🤍 <span class="like-count">1</span></button>
+              <button class="action-btn" onclick="event.stopPropagation();">📝 3</button>
+              <button class="action-btn" onclick="event.stopPropagation();">🔗</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <h3>Cyberpunk Night Street Glow</h3>
+          <div class="photographer-info">
+            <span>by Rohan Joshi</span>
+            <span class="location">📍 Bandra Night Alley</span>
+          </div>
+          <a href="photographers.html" class="find-link" onclick="event.stopPropagation();">
+            <span>Find Photographer for this Style</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="brand"><span class="brand__mark">📷</span> PoseBook</div>
+          <p>Shoot • Share • Go Inspired. The creator-first visual direction &amp; photography discovery platform.</p>
+          <span class="status-pill"><span class="dot"></span> All Systems Operational · API v1.0</span>
+          <div class="footer__social">
+            <a href="#">📸</a>
+            <a href="#">🐦</a>
+            <a href="#">📌</a>
+            <a href="#">💬</a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Platform</h4>
+            <a href="index.html">Home</a>
+            <a href="explore-poses.html">Explore Poses</a>
+            <a href="photographers.html">Find Photographers</a>
+          </div>
+          <div class="footer__col">
+            <h4>Resources</h4>
+            <a href="#hive">Lighting Guides</a>
+            <a href="explore-poses.html">Creators</a>
+            <a href="#">Camera Presets</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 PoseBook. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

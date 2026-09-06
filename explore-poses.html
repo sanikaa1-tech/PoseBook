@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Creative Poses &amp; Concepts — PoseBook</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="brand__mark">📷</span> PoseBook
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="explore-poses.html" class="active">Explore Poses</a>
+        <a href="photographers.html">Photographers</a>
+        <a href="#hive">Lighting &amp; Styles</a>
+        <a href="explore-poses.html">Creators</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="photographers.html" class="btn-pro">✨ Find a Pro</a>
+        <a href="#" class="btn-login">Log in</a>
+        <a href="#" class="btn-primary">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= PAGE HERO ================= -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="hero__eyebrow">✨ Endless Visual Inspiration</p>
+      <h1>Explore Creative <span class="gradient-text">Poses &amp; Concepts</span></h1>
+      <p class="lead">Browse curated photoshoot ideas, camera angles, lighting references, and connect directly with local photographers.</p>
+
+      <div class="search-card">
+        <div class="search-card__input">
+          📍 <input type="text" placeholder="Search poses, styles (e.g. golden hour, bridal, candid, beach)..." />
+        </div>
+        <button class="btn btn-grad">Search</button>
+      </div>
+
+      <div class="tab-row">
+        <button class="active">📷 Poses &amp; Shots (12)</button>
+        <button onclick="window.location.href='photographers.html'">✓ Verified Photographers (6)</button>
+        <button onclick="document.getElementById('hive').scrollIntoView({behavior:'smooth'})">⬡ Lighting &amp; Style Guides (6)</button>
+        <button>✨ Creators &amp; Stylists (3)</button>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="filter-tags">
+        <button class="tag active">All</button>
+        <button class="tag">Wedding</button>
+        <button class="tag">Portrait</button>
+        <button class="tag">Couple</button>
+        <button class="tag">Creative</button>
+        <button class="tag">Mountain</button>
+        <button class="tag">Travel</button>
+        <button class="tag">Street</button>
+        <button class="tag">Studio</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= POSES GALLERY SECTION ================= -->
+  <section class="section" style="padding: 20px 0 80px;">
+    <div class="container">
+      <div class="gallery-grid" id="explorePoseGrid">
+        <!-- Rendered by app.js with all 12 curated poses -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HIVE / MOOD SECTION ================= -->
+  <section class="hive-section" id="hive">
+    <div class="container">
+      <div class="hive-header">
+        <span class="hive-badge">⚡ THE AESTHETIC HIVE MATRIX</span>
+        <h2>Choose Your <span>Signature Shoot Mood</span></h2>
+        <p>Interactive honeycomb of lighting setups, wardrobe palettes, and matching professional photographers. Hover and tap to filter.</p>
+      </div>
+
+      <div class="hive-grid">
+        <div class="hive-card active-card">
+          <div class="hive-card-header">
+            <div class="icon-hex orange">👑</div>
+            <div>
+              <h3>Royal Heritage</h3>
+              <p>Regal lehengas, carved palace arches &amp; grand symmetry</p>
+            </div>
+            <span class="node-pill">Style Node</span>
+          </div>
+          <div class="hive-recipe">
+            💡 Warm amber &amp; subtle gold directional rim light
+          </div>
+          <a href="#" class="hive-link">Explore Poses in this Hive &rarr;</a>
+        </div>
+
+        <div class="hive-card">
+          <div class="hive-card-header">
+            <div class="icon-hex cyan">🌊</div>
+            <div>
+              <h3>Sunset Shoreline</h3>
+              <p>Windswept silhouettes, golden tones &amp; sea spray</p>
+            </div>
+            <span class="node-pill">Style Node</span>
+          </div>
+          <div class="hive-recipe">
+            💡 Low-angle golden hour backlight &amp; water reflections
+          </div>
+          <a href="#" class="hive-link">Explore Poses in this Hive &rarr;</a>
+        </div>
+
+        <div class="hive-card">
+          <div class="hive-card-header">
+            <div class="icon-hex magenta">⚡</div>
+            <div>
+              <h3>Cyberpunk Neon</h3>
+              <p>Rain-soaked urban pavements &amp; split chromatic tones</p>
+            </div>
+            <span class="node-pill">Style Node</span>
+          </div>
+          <div class="hive-recipe">
+            💡 Dual-tone magenta key &amp; cyan rim ambient
+          </div>
+          <a href="#" class="hive-link">Explore Poses in this Hive &rarr;</a>
+        </div>
+
+        <div class="hive-card">
+          <div class="hive-card-header">
+            <div class="icon-hex purple">🪵</div>
+            <div>
+              <h3>Minimal Octabox</h3>
+              <p>Clean geometry, monochrome backdrops &amp; deep serenity</p>
+            </div>
+            <span class="node-pill">Style Node</span>
+          </div>
+          <div class="hive-recipe">
+            💡 Soft Rembrandt lighting via 120cm Octabox
+          </div>
+          <a href="#" class="hive-link">Explore Poses in this Hive &rarr;</a>
+        </div>
+
+        <div class="hive-card">
+          <div class="hive-card-header">
+            <div class="icon-hex red">💍</div>
+            <div>
+              <h3>Intimate Chemistry</h3>
+              <p>Close candid framing &amp; soft emotional storytelling</p>
+            </div>
+            <span class="node-pill">Style Node</span>
+          </div>
+          <div class="hive-recipe">
+            💡 Diffused softbox key with warm fill bounce
+          </div>
+          <a href="#" class="hive-link">Explore Poses in this Hive &rarr;</a>
+        </div>
+
+        <div class="hive-card">
+          <div class="hive-card-header">
+            <div class="icon-hex green">💎</div>
+            <div>
+              <h3>Haute Runway</h3>
+              <p>Dynamic organza fabric flight &amp; razor-sharp editorial tension</p>
+            </div>
+            <span class="node-pill">Style Node</span>
+          </div>
+          <div class="hive-recipe">
+            💡 High-speed strobe + hard directional key
+          </div>
+          <a href="#" class="hive-link">Explore Poses in this Hive &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="brand"><span class="brand__mark">📷</span> PoseBook</div>
+          <p>Shoot • Share • Go Inspired. The creator-first visual direction &amp; photography discovery platform.</p>
+          <span class="status-pill"><span class="dot"></span> All Systems Operational · API v1.0</span>
+          <div class="footer__social">
+            <a href="#">📸</a>
+            <a href="#">🐦</a>
+            <a href="#">📌</a>
+            <a href="#">💬</a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Platform</h4>
+            <a href="index.html">Home</a>
+            <a href="explore-poses.html">Explore Poses</a>
+            <a href="photographers.html">Find Photographers</a>
+          </div>
+          <div class="footer__col">
+            <h4>Resources</h4>
+            <a href="#hive">Lighting Guides</a>
+            <a href="explore-poses.html">Creators</a>
+            <a href="#">API Docs</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 PoseBook. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

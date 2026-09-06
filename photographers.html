@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Photographers — PoseBook</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="brand__mark">📷</span> PoseBook
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="explore-poses.html">Explore Poses</a>
+        <a href="photographers.html" class="active">Photographers</a>
+        <a href="index.html#hive">Lighting &amp; Styles</a>
+        <a href="explore-poses.html">Creators</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="photographers.html" class="btn-pro">✨ Find a Pro</a>
+        <a href="#" class="btn-login">Log in</a>
+        <a href="#" class="btn-primary">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= PAGE HERO ================= -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="hero__eyebrow">✨ Verified Professionals</p>
+      <h1>Top <span class="gradient-text">Photographers</span></h1>
+      <p class="lead">Find and book verified photographers specializing in weddings, portraits, fashion, editorial, and events.</p>
+
+      <div class="search-card">
+        <span class="search-card__filter">All Cities</span>
+        <div class="search-card__input">
+          📍 <input type="text" placeholder="Search by photographer name, style, or city..." />
+        </div>
+        <button class="btn btn-grad">Search</button>
+      </div>
+
+      <div class="city-row">
+        <button class="active">All</button>
+        <button>Mumbai</button>
+        <button>Pune</button>
+        <button>Jaipur</button>
+        <button>Bangalore</button>
+        <button>Goa</button>
+        <button>Delhi</button>
+      </div>
+
+      <p class="status-line"><b>Showing 6</b> verified photographers</p>
+    </div>
+  </section>
+
+  <!-- ================= PHOTOGRAPHERS DIRECTORY ================= -->
+  <section class="section" style="padding: 10px 0 80px;">
+    <div class="container">
+      <div class="photographers-grid" id="photographersGrid">
+        <!-- Rendered by app.js with verified photographers -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="brand"><span class="brand__mark">📷</span> PoseBook</div>
+          <p>Shoot • Share • Go Inspired. The creator-first visual direction &amp; photography discovery platform.</p>
+          <span class="status-pill"><span class="dot"></span> All Systems Operational · API v1.0</span>
+          <div class="footer__social">
+            <a href="#">📸</a>
+            <a href="#">🐦</a>
+            <a href="#">📌</a>
+            <a href="#">💬</a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Platform</h4>
+            <a href="index.html">Home</a>
+            <a href="explore-poses.html">Explore Poses</a>
+            <a href="photographers.html">Find Photographers</a>
+          </div>
+          <div class="footer__col">
+            <h4>Resources</h4>
+            <a href="index.html#hive">Lighting Guides</a>
+            <a href="explore-poses.html">Creators</a>
+            <a href="#">API Docs</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 PoseBook. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
